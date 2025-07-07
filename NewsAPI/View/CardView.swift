@@ -22,11 +22,28 @@ struct CardView: View {
                         .padding(.horizontal)
                         .foregroundStyle(.gray)
                     
+                    
+                    if let urlToImage = article.urlToImage, let imageURL = URL(string: url) {
+                        AsyncImage(url: imageURL) {
+                            phase in
+                            if let image = phase.image {
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .cornerRadius(20)
+                                        .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 3)
+                                        .padding(.horizontal)
+                                        .cornerRadius(20)
+                            }
+                        }
+                    }
                     Rectangle().cornerRadius(20)
                         .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 3)
                         .padding(.horizontal)
                         .foregroundStyle(.black)
                        
+                    
+                    
                     
                     
                     
