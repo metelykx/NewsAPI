@@ -11,5 +11,5 @@ import Foundation
 
 enum NetworkErrors: String, Error {
     case invalidURL = "Invalid URL"
-    
+    case invalidURLResponse = "Invalid URL response"
 }
