@@ -7,9 +7,14 @@
 
 import Foundation
 
-class NetworkManager {
+final class NetworkManager {
     
+    
+    // in here I created a singelton for this class
     static let shared = NetworkManager()
     
+    // this is a initial for singelton
     private init() {}
+    
+    
 }
