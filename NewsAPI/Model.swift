@@ -6,5 +6,21 @@
 //
 
 import SwiftUI
+import Foundation
 
+// MARK: - Welcome
+struct Welcome: Codable {
+    let status: String
+    let totalResults: Int
+    let articles: [Article]
+}
+
+// MARK: - Article
+struct Article: Codable {
+    let author, title, description: String
+    let url: String
+    let urlToImage: String
+    let publishedAt: Date
+    let content: String
+}
 
