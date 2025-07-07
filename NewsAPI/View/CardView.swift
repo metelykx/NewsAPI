@@ -11,11 +11,12 @@ struct CardView: View {
     
     let article: Article
     var body: some View {
-        Text("dw")
-        
-        
-        
-        
+        VStack {
+            Rectangle()
+            
+            
+            
+        }
     }
 }
 
