@@ -10,12 +10,15 @@ import SwiftUI
 struct CardView: View {
     
     let article: Article
+    
+    //MARK: View
     var body: some View {
         VStack(alignment: .center) {
             GeometryReader { geometry in
             Rectangle()
-                    .frame(width: geometry.size.width, height: geometry.size.height/2)
                     .cornerRadius(20)
+                    .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
+                    .padding(.horizontal) // Отступы по бокам
             
             
             
