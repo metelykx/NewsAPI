@@ -24,6 +24,12 @@ final class NetworkManager {
     
     func getNews() async throws {
         
+        guard let url = URL(string: url) else { throw NetworkErrors.invalidURL}
         
     }
 }
+
+enum NetworkErrors: String, Error {
+    case invalidURL = "Invalid URL"
+}
+
