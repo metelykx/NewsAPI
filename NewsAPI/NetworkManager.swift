@@ -39,6 +39,12 @@ final class NetworkManager {
         //check the response from the Server
         guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { throw NetworkErrors.invalidURLResponse}
         
+        do {
+            
+        } catch {
+            
+        }
+        
         
     }
 }
