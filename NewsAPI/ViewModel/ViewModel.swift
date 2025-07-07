@@ -15,10 +15,11 @@ class NewsAPIModelView: ObservableObject {
     func fetchNews() {
         Task {
             do {
-                
+                //articles get ingo and post news
                 let articles = try await NetworkManager.shared.getNews()
                 news = articles.articles
             } catch {
+                
                 if let error = error as? NetworkErrors {
                     print(error)
                 }
