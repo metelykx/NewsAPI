@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Decodable {
+struct News: Decodable {
     let status: String
     let totalResults: Int
     let articles: [Article]
