@@ -18,7 +18,8 @@ struct CardView: View {
             Rectangle()
                     .cornerRadius(20)
                     .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
-                    .padding(.horizontal) // Отступы по бокам
+                    .padding(.horizontal)
+                    .foregroundStyle(.gray)
             
             
             
