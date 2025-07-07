@@ -9,6 +9,7 @@ import Foundation
 
 final class NetworkManager {
     
+    //MARK: Singleton
     
     // in here I created a singelton for this class
     static let shared = NetworkManager()
@@ -22,16 +23,18 @@ final class NetworkManager {
     private init() {}
     
     
+    
+    //MARK: Functions
+    
+    
     //func for get information
     func getNews() async throws {
         
-        //I checked url 
-        guard let url = URL(string: url) else { throw NetworkErrors.invalidURL}
+        //I checked url
+        guard let url = URL(string: url) else {throw NetworkErrors.invalidURL}
         
     }
 }
 
-enum NetworkErrors: String, Error {
-    case invalidURL = "Invalid URL"
-}
+
 
