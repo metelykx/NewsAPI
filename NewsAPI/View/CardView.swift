@@ -22,6 +22,11 @@ struct CardView: View {
                         .padding(.horizontal)
                         .foregroundStyle(.gray)
                     
+                    Rectangle().cornerRadius(20)
+                        .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 3)
+                        .padding(.horizontal)
+                        .foregroundStyle(.black)
+                       
                     
                     
                     
