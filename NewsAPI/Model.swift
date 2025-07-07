@@ -16,7 +16,7 @@ struct Welcome: Decodable {
 }
 
 // MARK: - Article
-struct Article: Codable {
+struct Article: Decodable {
     let author, title, description: String
     let url: String
     let urlToImage: String
