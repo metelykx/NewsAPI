@@ -23,8 +23,7 @@ final class NetworkManager {
     private init() {}
     
     
-    
-    //MARK: Functions
+    //MARK: Function
     
     
     //func for get information
@@ -39,12 +38,12 @@ final class NetworkManager {
         //check the response from the Server
         guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { throw NetworkErrors.invalidURLResponse}
         
+        // get info
         do {
             return try JSONDecoder().decode(News.self, from: data)
         } catch {
             throw NetworkErrors.ivalidData
         }
-        
         
     }
 
