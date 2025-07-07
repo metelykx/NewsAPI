@@ -14,7 +14,7 @@ final class NetworkManager {
     // in here I created a singelton for this class
     static let shared = NetworkManager()
     
-    
+    let decoder = JSONDecoder()
     //url for get information from API
     let url = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=56f20e2c6d354ee58b9bfc763887716a"
     
@@ -24,7 +24,6 @@ final class NetworkManager {
     
     
     //MARK: Function
-    
     
     //func for get information
     func getNews() async throws -> News {
