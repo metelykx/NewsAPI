@@ -33,7 +33,10 @@ final class NetworkManager {
         //I checked url
         guard let url = URL(string: url) else {throw NetworkErrors.invalidURL}
         
+        //get info and answer from the Server
         let (data, response) = try await URLSession.shared.data(from: url)
+        
+        
         
     }
 }
