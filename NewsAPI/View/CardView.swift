@@ -12,10 +12,13 @@ struct CardView: View {
     let article: Article
     var body: some View {
         VStack {
+            GeometryReader { geometry in
             Rectangle()
+                
             
             
             
+            }
         }
     }
 }
