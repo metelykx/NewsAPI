@@ -25,6 +25,7 @@ final class NetworkManager {
     //func for get information
     func getNews() async throws {
         
+        //I checked url 
         guard let url = URL(string: url) else { throw NetworkErrors.invalidURL}
         
     }
