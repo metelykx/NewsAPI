@@ -14,15 +14,20 @@ struct CardView: View {
     //MARK: View
     var body: some View {
         VStack(alignment: .center) {
-            GeometryReader { geometry in
-            Rectangle()
-                    .cornerRadius(20)
-                    .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
-                    .padding(.horizontal)
-                    .foregroundStyle(.gray)
-            
-            
-            
+            ZStack {
+                GeometryReader { geometry in
+                    Rectangle()
+                        .cornerRadius(20)
+                        .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
+                        .padding(.horizontal)
+                        .foregroundStyle(.gray)
+                    
+                    
+                    
+                    
+                    
+                    
+                }
             }
         }
     }
