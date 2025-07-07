@@ -5,7 +5,6 @@
 //  Created by Denis Ivaschenko on 07.07.2025.
 //
 
-import SwiftUI
 import Foundation
 
 // MARK: - Welcome
