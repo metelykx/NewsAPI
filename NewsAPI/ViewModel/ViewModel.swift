@@ -9,5 +9,6 @@ import SwiftUI
 
 class NewsAPIModelView: ObservableObject {
     
+    //array news
     @Published var news: [Article] = []
 }
