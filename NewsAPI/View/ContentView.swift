@@ -12,7 +12,7 @@ struct ContentView: View {
     @StateObject var art = NewsAPIModelView()
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             Text("News")
                 .font(.title)
                 .fontWeight(.bold)
