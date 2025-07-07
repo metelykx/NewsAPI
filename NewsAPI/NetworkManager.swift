@@ -28,7 +28,7 @@ final class NetworkManager {
     
     
     //func for get information
-    func getNews() async throws {
+    func getNews() async throws -> Welcome {
         
         //I checked url
         guard let url = URL(string: url) else {throw NetworkErrors.invalidURL}
@@ -40,7 +40,7 @@ final class NetworkManager {
         guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { throw NetworkErrors.invalidURLResponse}
         
         do {
-            
+            return try JSONDecoder().decode(Welcome.self, from: data)
         } catch {
             
         }
