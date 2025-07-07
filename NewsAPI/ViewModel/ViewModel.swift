@@ -19,7 +19,7 @@ class NewsAPIModelView: ObservableObject {
                 let articles = try await NetworkManager.shared.getNews()
                 news = articles.articles
             } catch {
-                
+                //if error == error which in the NetworkError. you need to show this error in console.
                 if let error = error as? NetworkErrors {
                     print(error)
                 }
