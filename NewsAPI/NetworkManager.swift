@@ -41,7 +41,7 @@ final class NetworkManager {
         
         // get info
         do {
-            return try JSONDecoder().decode(News.self, from: data)
+            return try decoder.decode(News.self, from: data)
         } catch {
             throw NetworkErrors.ivalidData
         }
