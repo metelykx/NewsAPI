@@ -36,7 +36,7 @@ final class NetworkManager {
         //get info and answer from the Server
         let (data, response) = try await URLSession.shared.data(from: url)
         
-        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { throw }
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { throw NetworkErrors.invalidURLResponse}
         
         
     }
