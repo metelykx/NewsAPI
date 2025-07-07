@@ -9,7 +9,7 @@ import SwiftUI
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
+struct Welcome: Decodable {
     let status: String
     let totalResults: Int
     let articles: [Article]
