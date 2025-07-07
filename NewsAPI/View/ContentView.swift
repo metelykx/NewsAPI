@@ -14,6 +14,10 @@ struct ContentView: View {
     var body: some View {
         Text("News")
             .font(.title)
+            .fontWeight(.bold)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.leading)
+            .padding(.top)
     }
 }
 
