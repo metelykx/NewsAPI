@@ -7,6 +7,8 @@
 
 import Foundation
 
+//enum for processing errors when i get information from API
+
 enum NetworkErrors: String, Error {
     case invalidURL = "Invalid URL"
 }
