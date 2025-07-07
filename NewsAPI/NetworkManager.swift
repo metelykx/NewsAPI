@@ -17,4 +17,7 @@ final class NetworkManager {
     private init() {}
     
     
+    func getNews() {
+        
+    }
 }
