@@ -22,7 +22,9 @@ final class NetworkManager {
     
     
     // this is a initial for singelton
-    private init() {}
+    private init() {
+        decoder.dateDecodingStrategy = .iso8601
+    }
     
     
     //MARK: Function
