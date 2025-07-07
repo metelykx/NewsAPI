@@ -15,6 +15,7 @@ struct CardView: View {
             GeometryReader { geometry in
             Rectangle()
                     .frame(width: geometry.size.width, height: geometry.size.height/2)
+                    .cornerRadius(20)
             
             
             
