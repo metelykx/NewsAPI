@@ -14,8 +14,12 @@ class NewsAPIModelView: ObservableObject {
     
     func fetchNews() {
         Task {
-            let articles = try await NetworkManager.shared.getNews()
-            news = articles.articles
+            do {
+                let articles = try await NetworkManager.shared.getNews()
+                news = articles.articles
+            } catch {
+                
+            }
         }
     }
 }
