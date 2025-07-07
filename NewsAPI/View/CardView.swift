@@ -11,10 +11,10 @@ struct CardView: View {
     
     let article: Article
     var body: some View {
-        VStack {
+        VStack(alignment: .center) {
             GeometryReader { geometry in
             Rectangle()
-                
+                    .frame(width: geometry.size.width, height: geometry.size.height/2)
             
             
             
