@@ -17,7 +17,7 @@ final class NetworkManager {
     private init() {}
     
     
-    func getNews() {
+    func getNews() async throws {
         
     }
 }
