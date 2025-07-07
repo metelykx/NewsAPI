@@ -11,4 +11,8 @@ class NewsAPIModelView: ObservableObject {
     
     //array news
     @Published var news: [Article] = []
+    
+    func fetchNews() {
+        
+    }
 }
