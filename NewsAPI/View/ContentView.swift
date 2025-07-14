@@ -19,6 +19,10 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
                 .padding(.top)
+            
+            ForEach(art.news, id: \.url) { article in
+                
+            }
         }
     }
 }

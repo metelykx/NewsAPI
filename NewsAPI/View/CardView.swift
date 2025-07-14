@@ -42,11 +42,12 @@ struct CardView: View {
                             Text(article.author)
                                 .frame(height: geometry.size.height / 0.8)
                                 .padding(.leading)
-                                
+                            
                                 .padding(.horizontal)
                                 .lineLimit(3)
                             
                             Text(article.publishedAt, style: .date)
+                                
                         }
                         
                         
