@@ -20,14 +20,14 @@ struct CardView: View {
                         
                         Rectangle()
                             .cornerRadius(20)
-                            .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
+                            .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 1.5)
                             .padding(.horizontal)
                             .foregroundStyle(.gray)
                             
                         Text(article.title)
                             .frame(height: geometry.size.height / 1.4)
                             .padding(.leading)
-                            .font(.headline)
+                            .font(.title)
                             .padding(.horizontal)
                         
                         Text(article.description)
