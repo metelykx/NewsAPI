@@ -9,7 +9,13 @@ import SwiftUI
 
 struct SettingsView : View {
     var body: some View {
-        Text("dede")
+       
+        
+        
+        
+        Text("Settings")
+            .font(.title)
+            .fontWeight(.bold)
     }
 }
 
