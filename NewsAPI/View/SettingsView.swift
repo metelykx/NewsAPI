@@ -9,16 +9,17 @@ import SwiftUI
 
 struct SettingsView : View {
     var body: some View {
-       
         
         
-        
-        Text("Settings")
-            .font(.title)
-            .fontWeight(.bold)
+        VStack {
+            
+            Text("Settings")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding(.leading)
+        }
     }
 }
-
 
 #Preview {
     SettingsView()
