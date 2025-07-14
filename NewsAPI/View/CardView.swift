@@ -25,7 +25,8 @@ struct CardView: View {
                             .foregroundStyle(.gray)
                             
                         Text(article.title)
-                            .padding(.top, 270)
+                            .frame(height: geometry.size.height / 1.4)
+                            
                             
                             
                             
