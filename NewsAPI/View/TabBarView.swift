@@ -9,12 +9,19 @@ import SwiftUI
 
 struct TabBarView : View {
     var body: some View {
-        Text("ded")
-        
-        
         
         TabView {
+            Text("News")
+                .tabItem {
+                    Image(systemName: "newspaper.fill")
+                    Text("News")
+                }
             
+            Text("Settings")
+                .tabItem {
+                    Image(systemName: "gearshape.fill")
+                    Text("Settings")
+                }
         }
     }
 }
