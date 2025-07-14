@@ -11,7 +11,7 @@ struct TabBarView : View {
     var body: some View {
         
         TabView {
-            Text("News")
+            ContentView()
                 .tabItem {
                     Image(systemName: "newspaper.fill")
                     Text("News")
