@@ -19,6 +19,7 @@ extension Text {
                         .opacity(0.8)
     }
     
+    //for description 
     func descriptionFont() -> some View {
         self
             .foregroundStyle(.primary)
