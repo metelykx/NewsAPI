@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-//MARK: extensions
+//MARK: extension Text
 extension Text {
     
     //for title
@@ -19,11 +19,21 @@ extension Text {
                         .opacity(0.8)
     }
     
-    //for description 
+    //for description
     func descriptionFont() -> some View {
         self
             .foregroundStyle(.primary)
                         .font(.system(size: 14, weight: .regular, design: .rounded))
                         .opacity(0.8)
+    }
+    
+    
+    
+}
+
+//
+extension Date {
+    func convertData() -> String {
+        return formatted(.dateTime.hour().minute().day().month().year())
     }
 }
