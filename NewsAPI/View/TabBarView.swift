@@ -10,6 +10,12 @@ import SwiftUI
 struct TabBarView : View {
     var body: some View {
         Text("ded")
+        
+        
+        
+        TabView {
+            
+        }
     }
 }
 
