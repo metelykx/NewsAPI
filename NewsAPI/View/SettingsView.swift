@@ -10,13 +10,15 @@ import SwiftUI
 struct SettingsView : View {
     var body: some View {
         
-        
-        VStack {
-            
-            Text("Settings")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.leading)
+        ScrollView(showsIndicators: false) {
+            VStack {
+                Text("Settings")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading)
+                    .padding(.top)
+            }
         }
     }
 }
