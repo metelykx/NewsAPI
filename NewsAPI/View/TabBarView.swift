@@ -17,7 +17,7 @@ struct TabBarView : View {
                     Text("News")
                 }
             
-            Text("Settings")
+            SettingsView()
                 .tabItem {
                     Image(systemName: "gearshape.fill")
                     Text("Settings")
