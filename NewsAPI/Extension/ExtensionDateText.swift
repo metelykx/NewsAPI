@@ -8,7 +8,10 @@
 import Foundation
 import SwiftUI
 
+//MARK: extensions
 extension Text {
+    
+    //for title
     func titleFont() -> some View {
         self
             .foregroundStyle(.primary)
