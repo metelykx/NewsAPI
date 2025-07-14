@@ -18,11 +18,21 @@ struct SettingsView : View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.leading)
                     .padding(.top)
+                
+                
+                
             }
         }
     }
 }
 
+struct SettingsPickerFontsView: View {
+    var body: some View {
+        HStack {
+            
+        }
+    }
+}
 #Preview {
     SettingsView()
 }
