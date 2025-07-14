@@ -13,16 +13,21 @@ struct ContentView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            Text("News")
-                .font(.title)
-                .fontWeight(.bold)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading)
-                .padding(.top)
-            
-            ForEach(art.news, id: \.url) { article in
+            VStack(alignment: .leading) {
+                Text("News")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading)
+                    .padding(.top)
                 
+                ForEach(art.news, id: \.url) { article in
+                    CardView(article: article)
+                }
             }
+        }
+        .onAppear {
+            art.fetchNews()
         }
     }
 }
