@@ -25,9 +25,9 @@ struct CardView: View {
                             .foregroundStyle(.gray)
                             
                         Text(article.title)
-                            .font(.headline)
-                            .foregroundStyle(.white)
-                            .padding(.horizontal)
+                            .padding(.top, 270)
+                            
+                            
                             
                         
                         
