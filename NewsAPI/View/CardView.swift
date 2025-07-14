@@ -37,6 +37,9 @@ struct CardView: View {
                             .padding(.horizontal)
                             .lineLimit(3)
                         
+                        
+                        Text(article.author)
+                        
                             
                             
                             
