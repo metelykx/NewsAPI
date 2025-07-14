@@ -26,9 +26,6 @@ extension Text {
                         .font(.system(size: 14, weight: .regular, design: .rounded))
                         .opacity(0.8)
     }
-    
-    
-    
 }
 
 //MARK: extension Date
