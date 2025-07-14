@@ -29,6 +29,8 @@ struct SettingsView : View {
 struct SettingsPickerFontsView: View {
     var body: some View {
         HStack {
+            Text("Fonts")
+                .font(.title3)
             
         }
     }
