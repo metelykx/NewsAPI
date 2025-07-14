@@ -29,6 +29,14 @@ struct CardView: View {
                             .padding(.leading)
                             .font(.headline)
                             .padding(.horizontal)
+                        
+                        Text(article.description)
+                            .frame(height: geometry.size.height / 1.2)
+                            .padding(.leading)
+                            
+                            .padding(.horizontal)
+                            .lineLimit(3)
+                        
                             
                             
                             
@@ -68,7 +76,7 @@ struct CardView: View {
         article: Article(
             author: "Example",
             title: "News 1",
-            description: "Tralalelo",
+            description: "Tralalelovrvrvrvrvrvrvrrvvvvvvvvvvv f fvfvfvfvf vfvfvfvfv vfvfvvfvfv vfvfvffvf vfvfvfvfv vfvfvfvf vfvfvf",
             url: "",
             urlToImage: "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftrinixy.ru%2F231781-kartinki-i-risunki-kotorye-zastavlyayut-zadumatsya.html&psig=AOvVaw30fAXhKkJqy9G6oxxb7_WT&ust=1751973672354000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCIrtXQqo4DFQAAAAAdAAAAABAL",
             publishedAt: Date(),
