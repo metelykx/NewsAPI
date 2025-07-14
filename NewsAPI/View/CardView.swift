@@ -8,50 +8,48 @@
 import SwiftUI
 
 struct CardView: View {
+    
     let article: Article
     
+    //MARK: View
     var body: some View {
         VStack(alignment: .center) {
-            GeometryReader { geometry in
+            VStack {
                 ZStack {
-                    // Background rectangle
-                    RoundedRectangle(cornerRadius: 20)
-                        .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
-                        .padding(.horizontal)
-                        .foregroundColor(.gray)
-                    
-                    // Image content
-                    if let imageURL = URL(string: article.urlToImage) {
-                        AsyncImage(url: imageURL) { phase in
-                            if let image = phase.image {
-                                image
-                                    .resizable()
-                                    .scaledToFill()
-                            } else if phase.error != nil {
-                                placeholderView(geometry: geometry, color: .black)
-                            } else {
-                                ProgressView()
+                    GeometryReader { geometry in
+                        
+                        Rectangle()
+                            .cornerRadius(20)
+                            .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
+                            .padding(.horizontal)
+                            .foregroundStyle(.gray)
+                        
+                        
+                        if let url = article.urlToImage, let imageURL = URL(string: url) {
+                            AsyncImage(url: imageURL) {
+                                phase in
+                                if let image = phase.image {
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                        .cornerRadius(20)
+                                        .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 3)
+                                        .padding(.horizontal)
+                                        .cornerRadius(20)
+                                }
+                                else {
+                                    Rectangle().cornerRadius(20)
+                                        .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 3)
+                                        .padding(.horizontal)
+                                        .foregroundStyle(.black)
+                                    
+                                }
                             }
                         }
-                        .cornerRadius(20)
-                        .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
-                        .padding(.horizontal)
-                    } else {
-                        placeholderView(geometry: geometry, color: .black)
                     }
                 }
             }
-            .frame(height: 200) // Set a fixed height for consistency
         }
-    }
-    
-    // Helper view for placeholder
-    @ViewBuilder
-    private func placeholderView(geometry: GeometryProxy, color: Color) -> some View {
-        RoundedRectangle(cornerRadius: 20)
-            .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
-            .padding(.horizontal)
-            .foregroundColor(color)
     }
 }
 
