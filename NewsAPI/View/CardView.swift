@@ -23,6 +23,12 @@ struct CardView: View {
                             .frame(maxWidth: .infinity, maxHeight: geometry.size.height / 2)
                             .padding(.horizontal)
                             .foregroundStyle(.gray)
+                            
+                        Text(article.title)
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .padding(.horizontal)
+                            
                         
                         
                         if let url = article.urlToImage, let imageURL = URL(string: url) {
