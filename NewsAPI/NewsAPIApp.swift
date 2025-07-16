@@ -30,14 +30,16 @@ struct NewsAPIApp: App {
                     .opacity(isActive ? 0:1)
                     .animation(.default, value: isActive)
             }
-        }.onChange(of: scenePhase) { oldValue, newValue in
+        }
+        //switch for lifeCycle
+        .onChange(of: scenePhase) { oldValue, newValue in
             switch newValue {
             case .active:
                 self.isActive = true
             case .inactive:
                 self.isActive = false
             case .background:
-                self.isActive = true
+                self.isActive = false
                 default :
                 break
             }
