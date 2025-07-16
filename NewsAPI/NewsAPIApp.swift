@@ -10,6 +10,9 @@ import SwiftUI
 @main
 struct NewsAPIApp: App {
     var body: some Scene {
+        
+        @Environment(.\scenePhase) var scenePhase
+        
         WindowGroup {
             ContentView()
         }

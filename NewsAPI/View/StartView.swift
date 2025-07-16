@@ -22,7 +22,7 @@ struct StartView: View {
                     .foregroundStyle(.primary)
                 Spacer()
             }.padding(.top, geometry.size.height / 8)
-        }
+        }.background(Color(.systemBackground))
     }
 }
 
