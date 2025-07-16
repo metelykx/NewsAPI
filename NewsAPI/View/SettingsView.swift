@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SettingsView : View {
+    
+    
+    @AppStorage("useGrayText") private var useGrayText = false
+    
     var body: some View {
         
         ScrollView(showsIndicators: false) {
