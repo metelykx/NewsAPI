@@ -16,7 +16,9 @@ extension Text {
     private var currentColor: Color {
         
         let useGray = UserDefaults.standard.bool(forKey: "useGrayText")
+        return useGray ? .gray : .black
     }
+    
     //for title
     func titleFont() -> some View {
         self
