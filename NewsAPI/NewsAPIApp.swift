@@ -18,7 +18,7 @@ struct NewsAPIApp: App {
     
     var body: some Scene {
         WindowGroup {
-        ZStack {
+            ZStack {
                 ContentView()
             }
         }
