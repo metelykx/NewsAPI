@@ -10,20 +10,20 @@ import SwiftUI
 struct SettingsView : View {
     
     //appstorage control information from UserDefaults
-    @AppStorage("useGrayText") private var useGrayText = false
+@AppStorage("useGrayText") private var useGrayText = false
     
     var body: some View {
-                    NavigationView {
-                        Form {
-                            Section(header: Text("Text Color")) {
-                                Toggle("Use gray Text", isOn: $useGrayText)
-                            }
+        NavigationView {
+                    Form {
+                        Section(header: Text("Text Color")) {
+                            Toggle("Use gray Text", isOn: $useGrayText)
                         }
-                        .navigationTitle(Text("Settings"))
-                    
                     }
-            }
+                    .navigationTitle(Text("Settings"))
+                    
         }
+    }
+}
 
 
 
