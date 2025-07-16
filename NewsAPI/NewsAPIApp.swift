@@ -17,11 +17,8 @@ struct NewsAPIApp: App {
     @State private var isActive = false
     
     var body: some Scene {
-        
+        WindowGroup {
         ZStack {
-            
-            
-            WindowGroup {
                 ContentView()
             }
         }
