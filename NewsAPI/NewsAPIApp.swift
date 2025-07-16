@@ -11,7 +11,8 @@ import SwiftUI
 struct NewsAPIApp: App {
     var body: some Scene {
         
-        @Environment(.\scenePhase) var scenePhase
+        //for look after scenePhase
+        @Environment(\.scenePhase) var scenePhase
         
         WindowGroup {
             ContentView()
