@@ -25,7 +25,7 @@ struct NewsAPIApp: App {
                     .opacity(isActive ? 1 : 0)
                     .animation(.default, value: isActive)
                 
-                
+                //show startview
                 StartView()
                     .opacity(isActive ? 0:1)
                     .animation(.default, value: isActive)
