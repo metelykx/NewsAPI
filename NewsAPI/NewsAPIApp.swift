@@ -25,6 +25,7 @@ struct NewsAPIApp: App {
                 
                 
                 StartView()
+                    .opacity(isActive ? 0:1)
             }
         }
     }
