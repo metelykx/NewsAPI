@@ -11,6 +11,11 @@ import SwiftUI
 //MARK: extension Text
 extension Text {
     
+    
+    
+    private var currentColor: Color {
+        
+    }
     //for title
     func titleFont() -> some View {
         self
