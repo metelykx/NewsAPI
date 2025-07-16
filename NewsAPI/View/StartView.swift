@@ -11,6 +11,9 @@ struct StartView: View {
     var body: some View {
         VStack {
             Image("1", bundle: nil)
+                .resizable()
+                .scaledToFit()
+                
             Text("NewsAPI")
                 .fontWeight(.bold)
                 .font(.title)
