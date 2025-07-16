@@ -20,7 +20,7 @@ struct StartView: View {
                     .fontWeight(.bold)
                     .font(.title)
                 Spacer()
-            }
+            }.padding(.top, geometry.size.height / 8)
         }
     }
 }
