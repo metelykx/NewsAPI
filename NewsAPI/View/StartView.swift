@@ -12,6 +12,7 @@ struct StartView: View {
         VStack {
             Text("NewsAPI")
                 .fontWeight(.bold)
+                .font(.title)
         }
     
     }
