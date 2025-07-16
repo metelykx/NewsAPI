@@ -13,25 +13,20 @@ struct SettingsView : View {
     @AppStorage("useGrayText") private var useGrayText = false
     
     var body: some View {
-        NavigationView {
+        
             
-            
-            ScrollView(showsIndicators: false) {
-                VStack {
-                    Text("Settings")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading)
-                        .padding(.top)
+          
                     
-                    
+                    NavigationView {
+                        Form {
+                            Section(header: Text("Text Color")) {
+                                Toggle("Use gray Text", isOn: $useGrayText)
+                            }
+                        }
                     
                 }
             }
         }
-    }
-}
 
 struct SettingsPickerFontsView: View {
     var body: some View {
