@@ -20,7 +20,7 @@ struct NewsAPIApp: App {
         WindowGroup {
             ZStack {
                 
-                
+                //show tab
                 TabBarView()
                     .opacity(isActive ? 1 : 0)
                     .animation(.default, value: isActive)
