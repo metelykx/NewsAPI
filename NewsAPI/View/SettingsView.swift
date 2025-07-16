@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView : View {
     
     //appstorage control information from UserDefaults
-@AppStorage("useGrayText") private var useGrayText = false
+@AppStorage("useGrayText") var useGrayText = false
     
     var body: some View {
         NavigationView {

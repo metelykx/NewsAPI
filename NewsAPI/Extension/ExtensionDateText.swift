@@ -13,7 +13,7 @@ extension Text {
     
     
     // currentColor
-    private var currentColor: Color {
+    func currentTextColor() -> Color {
         
         let useGray = UserDefaults.standard.bool(forKey: "useGrayText")
         return useGray ? .gray : .black
