@@ -14,6 +14,7 @@ struct NewsAPIApp: App {
         //for look after scenePhase
         @Environment(\.scenePhase) var scenePhase
         
+        @State private var isActive = false
         WindowGroup {
             ContentView()
         }
