@@ -12,10 +12,6 @@ struct SettingsView : View {
     //appstorage control information from UserDefaults
     @AppStorage("useGrayText") private var useGrayText = false
     
-    //AppStorage for control info from UsDef
-    @AppStorage("selectedFont") private var selectedFont = false
-    
-    
     var body: some View {
         
         ScrollView(showsIndicators: false) {
