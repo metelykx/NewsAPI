@@ -19,7 +19,9 @@ struct NewsAPIApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack {
-                ContentView()
+                
+                
+                TabBarView()
                     .opacity(isActive ? 1 : 0)
                     .animation(.default, value: isActive)
                 
