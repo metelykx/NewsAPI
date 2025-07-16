@@ -10,6 +10,7 @@ import SwiftUI
 struct StartView: View {
     var body: some View {
         VStack {
+            Image("1", bundle: nil)
             Text("NewsAPI")
                 .fontWeight(.bold)
                 .font(.title)
