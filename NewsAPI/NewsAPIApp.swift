@@ -13,6 +13,7 @@ struct NewsAPIApp: App {
     //for look after scenePhase
     @Environment(\.scenePhase) var scenePhase
     
+    //for look after isActive or no
     @State private var isActive = false
     
     var body: some Scene {
