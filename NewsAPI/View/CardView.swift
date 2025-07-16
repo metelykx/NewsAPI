@@ -51,7 +51,7 @@ struct CardView: View {
             HStack {
                 Text(article.author.isEmpty ? "Unknown Author" : article.author)
                     .font(.caption)
-                    .foregroundColor(.gray)
+                    .foregroundColor(useGrayText ? .gray : .black)
                 
                 Spacer()
                 
