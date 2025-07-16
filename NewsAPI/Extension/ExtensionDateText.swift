@@ -12,7 +12,7 @@ import SwiftUI
 extension Text {
     
     
-    
+    // currentColor
     private var currentColor: Color {
         
         let useGray = UserDefaults.standard.bool(forKey: "useGrayText")
