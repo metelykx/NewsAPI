@@ -23,8 +23,9 @@ struct SettingsView : View {
                                 Toggle("Use gray Text", isOn: $useGrayText)
                             }
                         }
+                        .navigationTitle(Text("Settings"))
                     
-                }
+                    }
             }
         }
 
