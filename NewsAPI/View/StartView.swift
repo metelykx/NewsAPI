@@ -19,6 +19,7 @@ struct StartView: View {
                 Text("NewsAPI")
                     .fontWeight(.bold)
                     .font(.title)
+                    .foregroundStyle(.primary)
                 Spacer()
             }.padding(.top, geometry.size.height / 8)
         }
