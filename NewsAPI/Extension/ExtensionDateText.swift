@@ -19,6 +19,11 @@ extension Text {
         return useGray ? .gray : .black
     }
     
+    
+    
+    private var currenrFonts: Font {
+        
+    }
     //for title
     func titleFont() -> some View {
         self
