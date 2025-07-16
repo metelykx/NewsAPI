@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct NewsAPIApp: App {
+    
+    //for look after scenePhase
+    @Environment(\.scenePhase) var scenePhase
+    
+    @State private var isActive = false
+    
     var body: some Scene {
         
-        //for look after scenePhase
-        @Environment(\.scenePhase) var scenePhase
         
-        @State private var isActive = false
         WindowGroup {
             ContentView()
         }
