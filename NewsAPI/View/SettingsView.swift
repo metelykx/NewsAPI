@@ -13,10 +13,6 @@ struct SettingsView : View {
     @AppStorage("useGrayText") private var useGrayText = false
     
     var body: some View {
-        
-            
-          
-                    
                     NavigationView {
                         Form {
                             Section(header: Text("Text Color")) {
@@ -29,15 +25,8 @@ struct SettingsView : View {
             }
         }
 
-struct SettingsPickerFontsView: View {
-    var body: some View {
-        HStack {
-            Text("Fonts")
-                .font(.title3)
-            
-        }
-    }
-}
+
+
 #Preview {
     SettingsView()
 }
