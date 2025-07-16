@@ -9,16 +9,19 @@ import SwiftUI
 
 struct StartView: View {
     var body: some View {
-        VStack {
-            Image("1", bundle: nil)
-                .resizable()
-                .scaledToFit()
+        GeometryReader { geometry in
+            
+            VStack {
+                Image("1", bundle: nil)
+                    .resizable()
+                    .scaledToFit()
                 
-            Text("NewsAPI")
-                .fontWeight(.bold)
-                .font(.title)
+                Text("NewsAPI")
+                    .fontWeight(.bold)
+                    .font(.title)
+                Spacer()
+            }
         }
-    
     }
 }
 
