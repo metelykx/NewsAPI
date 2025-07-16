@@ -3,6 +3,7 @@ import SwiftUI
 struct CardView: View {
     
     let article: Article
+    @AppStorage("useGrayText") private var useGrayText = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -37,7 +38,7 @@ struct CardView: View {
             // MARK: - Заголовок
             Text(article.title)
                 .font(.headline)
-                .foregroundColor(.primary)
+                .foregroundColor(useGrayText ? .gray : .black)
                 .lineLimit(2)
             
             // MARK: - Описание
