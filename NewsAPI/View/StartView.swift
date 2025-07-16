@@ -11,6 +11,8 @@ struct StartView: View {
     var body: some View {
         VStack {
             Text("NewsAPI")
+                .bold()
+                
         }
     
     }
