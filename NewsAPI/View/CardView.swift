@@ -57,7 +57,7 @@ struct CardView: View {
                 
                 Text(article.publishedAt, style: .date)
                     .font(.caption)
-                    .foregroundColor(.gray)
+                    .foregroundColor(useGrayText ? .gray : .black)
             }
         }
         .padding()
