@@ -22,6 +22,9 @@ struct NewsAPIApp: App {
                 ContentView()
                     .opacity(isActive ? 1 : 0)
                     .animation(.default, value: isActive)
+                
+                
+                StartView()
             }
         }
     }
