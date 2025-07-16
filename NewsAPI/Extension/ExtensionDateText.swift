@@ -22,7 +22,7 @@ extension Text {
     
     
     private var currenrFonts: Font {
-        
+        let useFont = UserDefaults.standard.bool(forKey: "selectedFont")
     }
     //for title
     func titleFont() -> some View {
