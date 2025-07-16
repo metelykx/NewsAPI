@@ -20,6 +20,7 @@ struct NewsAPIApp: App {
         WindowGroup {
             ZStack {
                 ContentView()
+                    .opacity(isActive ? 1 : 0)
             }
         }
     }
